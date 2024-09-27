@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drew and Ethan</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <!-- Update the path if needed -->
     <style>
         body {
             margin: 0;
@@ -19,10 +16,12 @@
         }
         .container {
             position: relative; /* Positioning context for the links */
+            width: 100%; /* Make the container responsive */
+            max-width: 800px; /* Max width for larger screens */
         }
         img {
-            max-width: 100%;
-            max-height: 100%;
+            width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
         }
         .address-link, .phone-link {
             position: absolute;
@@ -30,16 +29,16 @@
             text-decoration: none; /* Remove underline */
         }
         .address-link {
-            top: 390px; /* Adjusted position for address */
-            left: 150px; /* Adjusted position for address */
-            width: 350px; /* Set width for address */
-            height: 170px; /* Set height for address */
+            top: 40%; /* Adjusted position as a percentage */
+            left: 30%; /* Adjusted position as a percentage */
+            width: 43%; /* Width as a percentage */
+            height: 20%; /* Height as a percentage */
         }
         .phone-link {
-            top: 720px; /* Adjusted position for phone */
-            left: 100px; /* Adjusted position for phone */
-            width: 430px; /* Set width for phone */
-            height: 70px; /* Set height for phone */
+            top: 80%; /* Adjusted position as a percentage */
+            left: 10%; /* Adjusted position as a percentage */
+            width: 54%; /* Width as a percentage */
+            height: 10%; /* Height as a percentage */
         }
     </style>
 </head>
