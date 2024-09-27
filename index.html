@@ -13,18 +13,16 @@
             margin: 0; /* Remove default margin */
             background-color: #050605; /* Background color */
             display: flex;
-            justify-content: flex-start; /* Align to the top */
-            align-items: flex-start; /* Align to the top */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center items horizontally */
         }
         .container {
             position: relative; /* Positioning context for the links */
             width: 100%; /* Full width */
         }
         img {
-            width: auto; /* Keep original width */
-            height: auto; /* Keep original height */
-            max-width: 100%; /* Ensure it doesn't exceed the screen width */
             display: block; /* Prevent any gaps */
+            margin-top: 0; /* Remove any margin */
         }
         .address-link, .phone-link {
             position: absolute;
