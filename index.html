@@ -10,17 +10,16 @@
     <link rel="manifest" href="site.webmanifest">
     <style>
         body {
-            margin: 0;
-            height: 100vh;
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full height */
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #050605; /* Updated background color */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+            background-color: #050605; /* Background color */
         }
         .container {
             position: relative; /* Positioning context for the links */
-            width: 100%; /* Make the container responsive */
-            max-width: 800px; /* Max width for larger screens */
+            width: 100%; /* Full width */
         }
         img {
             width: 100%; /* Make the image responsive */
@@ -32,14 +31,14 @@
             text-decoration: none; /* Remove underline */
         }
         .address-link {
-            top: 40%; /* Adjusted position as a percentage */
-            left: 30%; /* Adjusted position as a percentage */
+            top: 40%; /* Position as a percentage */
+            left: 30%; /* Position as a percentage */
             width: 43%; /* Width as a percentage */
             height: 20%; /* Height as a percentage */
         }
         .phone-link {
-            top: 80%; /* Adjusted position as a percentage */
-            left: 10%; /* Adjusted position as a percentage */
+            top: 80%; /* Position as a percentage */
+            left: 10%; /* Position as a percentage */
             width: 54%; /* Width as a percentage */
             height: 10%; /* Height as a percentage */
         }
