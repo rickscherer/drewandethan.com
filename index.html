@@ -12,7 +12,9 @@
             justify-content: center;
             align-items: center;
             background-color: black;
-            position: relative; /* Enable absolute positioning of child elements */
+        }
+        .container {
+            position: relative; /* Positioning context for the link */
         }
         img {
             max-width: 100%;
@@ -20,20 +22,21 @@
         }
         .address-link {
             position: absolute;
-            top: 390px; /* Adjust this value based on the image */
-            left: 150px; /* Adjust this value based on the image */
-            transform: translate(-50%, -50%); /* Center the link */
-            color: transparent; /* Make the text transparent */
+            top: 390px; /* Adjusted position */
+            left: 150px; /* Adjusted position */
+            width: 350px; /* Set width */
+            height: 170px; /* Set height */
+            color: transparent; /* Make text transparent */
             text-decoration: none; /* Remove underline */
-            width: 350px; /* Adjust width */
-            height: 170px; /* Adjust height */
         }
     </style>
 </head>
 <body>
-    <img src="flyer.jpg" alt="Drew and Ethan Flyer">
-    <a href="https://maps.app.goo.gl/f3bkcMBMyJnhYJQr9" class="address-link" target="_blank">
-        43844 Carentan Dr., Temecula Ca 92592
-    </a>
+    <div class="container">
+        <img src="img/flyer.jpg" alt="Drew and Ethan Flyer">
+        <a href="https://maps.app.goo.gl/f3bkcMBMyJnhYJQr9" class="address-link" target="_blank">
+            43844 Carentan Dr., Temecula Ca 92592
+        </a>
+    </div>
 </body>
 </html>
